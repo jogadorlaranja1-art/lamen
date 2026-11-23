@@ -1,0 +1,220 @@
+*{
+    margin: 0%;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--var-bg-fundo-branco);
+}
+
+body{
+    background-color: var(--var-bg-fundo-branco);
+}
+
+:root{
+    --var-bg-vermelho:rgb(255, 19, 19);
+    --var-bg-fundo-branco:rgb(255, 248, 241);
+    --txt-color:white;
+}
+
+/*menu*/
+
+header{
+    background-color: var(--var-bg-vermelho);
+    padding: 2em 0;
+    position: sticky;
+    top: 0;
+}
+
+#menu{
+    width: 80%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+}
+
+
+
+#menu>li{
+    margin: 0 2em;
+    font-size: 24px;
+}
+
+#pedidos{
+    display: flex;
+}
+
+#pedidos>p{
+    display: none;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    background-color: rgb(255, 238, 0);
+    border-radius: 50px;
+}
+
+#pesquisa{
+    display: flex;
+    background-color: var(--var-bg-fundo-branco);
+    border-radius: 24px;
+    border: 12px;
+    height: 2em;
+}
+
+#pesquisa>div{
+    width: 30px;
+    margin-top: 0.15em;
+    margin-left: 2px;
+}
+
+#pesquisa>input{
+    font-size: 0.8em;
+    margin: auto;
+    background-color: rgba(250, 235, 215, 0);
+    border: none;
+}
+
+.menu-icon>a>div{
+width: 2.4em;
+}
+
+/*pag vendas*/
+
+body>h1{
+    font-family: "Jolly Lodger", system-ui;
+    color: var(--var-bg-vermelho);
+    font-size: 3em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+#pricipal{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+section>div{
+    margin: auto;
+    width: 45%;
+}
+
+#outros{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+section>div>img{
+    margin-bottom: 1.5em;
+    width: 300px;
+    display: block;       
+    margin-left: auto;    
+    margin-right: auto; 
+}
+
+section>div>a{
+    padding: 0.5em 2.5em;
+    background-color: var(--var-bg-vermelho);
+    border-radius: 24px;
+    font-size: 2em;
+    display: block;      
+    margin-left: auto;    
+    margin-right: auto;   
+    width: max-content;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--var-bg-vermelho);
+    display: flex;
+    height: 500px;
+    margin-top: 4em;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    color: var(--txt-color);
+}
+
+#direitos{
+    margin-top: 8.3em;
+}
+
+#mover1{
+    margin-left: 100px;
+}
+
+#mover2{
+    margin-left: 10em;
+}
+
+/* barra de pesquisa */
+
+.busca-container-custom {
+    position: relative !important;
+    width: 240px !important;
+    display: block !important;
+  }
+
+  #campoBuscaCustom {
+    width: 100% !important;
+    height: 38px !important;
+    padding: 0 15px !important;
+    border: none !important;
+    border-radius: 20px !important;
+    background-color: #ffffff !important;
+    color: #222222 !important;
+    font-size: 14px !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    margin: 0 !important;
+  }
+
+  /* Caixa flutuante dos resultados (começa invisível) */
+  #listaResultadosCustom {
+    display: none; /* O JavaScript controla isso */
+    position: absolute !important;
+    top: 44px !important; /* Fica exatamente abaixo da barra */
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    z-index: 9999 !important;
+    flex-direction: column !important;
+  }
+
+  /* Reseta qualquer estilo de botão/borda que seu header coloca nos <li> */
+  #listaResultadosCustom li {
+    display: block !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 10px 15px !important;
+    margin: 0 !important;
+    color: #222222 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    line-height: 1.2 !important;
+  }
+
+  #listaResultadosCustom li:hover {
+    background-color: #f0f0f0 !important;
+    color: #e60000 !important; /* Destaque em vermelho ao passar o mouse */
+  }
+
+.barra{
+    color: black;
+}

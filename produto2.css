@@ -1,0 +1,358 @@
+/* Reset básico e tipografia */
+*{
+    margin: 0%;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--var-bg-fundo-branco);
+}
+
+body{
+    background-color: var(--var-bg-fundo-branco);
+    background-color: #f7f7f7;
+    color: #333333;
+    justify-content: center;
+}
+
+:root{
+    --var-bg-vermelho:rgb(255, 19, 19);
+    --var-bg-fundo-branco:rgb(255, 248, 241);
+    --txt-color:white;
+}
+
+.imagi{
+    width: 190px;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+/* Card Principal no estilo iFood */
+.container {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+    margin: auto;
+    margin-top: 2em;
+}
+
+header{
+    background-color: var(--var-bg-vermelho);
+    padding: 2em 0;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
+
+#menu{
+    width: 80%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+}
+
+
+
+#menu>li{
+    margin: 0 2em;
+    font-size: 24px;
+}
+
+#pedidos{
+    display: flex;
+}
+
+#pedidos>p{
+    display: none;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    background-color: rgb(255, 238, 0);
+    border-radius: 50px;
+}
+
+#pesquisa{
+    display: flex;
+    background-color: var(--var-bg-fundo-branco);
+    border-radius: 24px;
+    border: 12px;
+    height: 2em;
+}
+
+#pesquisa>div{
+    width: 30px;
+    margin-top: 0.15em;
+    margin-left: 2px;
+}
+
+#pesquisa>input{
+    font-size: 0.8em;
+    margin: auto;
+    background-color: rgba(250, 235, 215, 0);
+    border: none;
+}
+
+.menu-icon>a>div{
+width: 2.4em;
+}
+
+/* Espaço para a Foto do Produto */
+.product-image-container {
+    width: 100%;
+    height: 300px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 4px solid #ea1d2c; /* Vermelho principal */
+}
+
+.product-image-placeholder {
+    color: #666666;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.product-image-placeholder span {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+/* Informações do Produto */
+.product-details {
+    padding: 24px;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Lugar para o Preço */
+.product-price {
+    font-size: 1.5rem;
+    color: #ea1d2c;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* Descrição de Ingredientes */
+.product-description {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Lista de Adicionais */
+.addons-section {
+    margin-bottom: 32px;
+}
+
+.addon-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.addon-item:last-child {
+    border-bottom: none;
+}
+
+.addon-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.addon-name {
+    font-weight: 
+500;
+    color: #333333;
+}
+
+.addon-price {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 2px;
+}
+
+/* Caixa de seleção vermelha */
+.addon-action input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ea1d2c;
+    cursor: pointer;
+}
+
+/* Rodapé: Contador de itens e Botão de Comprar */
+.footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eaeaea;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000; /* Detalhe em preto */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.quantity-btn {
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    width: 40px;
+    height: 44px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.quantity-btn:hover {
+    background-color: #f2f2f2;
+}
+
+.quantity-value {
+    width: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Botão Comprar */
+.btn-buy {
+    flex: 1;
+    background-color: #ea1d2c;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+.btn-buy:hover {
+    background-color: #cc1422;
+}
+
+footer{
+    background-color: var(--var-bg-vermelho);
+    display: flex;
+    height: 500px;
+    margin-top: 4em;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    color: var(--txt-color);
+}
+
+#direitos{
+    margin-top: 8.3em;
+}
+
+#mover1{
+    margin-left: 100px;
+}
+
+#mover2{
+    margin-left: 10em;
+}
+
+/* barra de pesquisa */
+
+.busca-container-custom {
+    position: relative !important;
+    width: 240px !important;
+    display: block !important;
+  }
+
+  #campoBuscaCustom {
+    width: 100% !important;
+    height: 38px !important;
+    padding: 0 15px !important;
+    border: none !important;
+    border-radius: 20px !important;
+    background-color: #ffffff !important;
+    color: #222222 !important;
+    font-size: 14px !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    margin: 0 !important;
+  }
+
+  /* Caixa flutuante dos resultados (começa invisível) */
+  #listaResultadosCustom {
+    display: none; /* O JavaScript controla isso */
+    position: absolute !important;
+    top: 44px !important; /* Fica exatamente abaixo da barra */
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    z-index: 9999 !important;
+    flex-direction: column !important;
+  }
+
+  /* Reseta qualquer estilo de botão/borda que seu header coloca nos <li> */
+  #listaResultadosCustom li {
+    display: block !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 10px 15px !important;
+    margin: 0 !important;
+    color: #222222 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    line-height: 1.2 !important;
+  }
+
+  #listaResultadosCustom li:hover {
+    background-color: #f0f0f0 !important;
+    color: #e60000 !important; /* Destaque em vermelho ao passar o mouse */
+  }
+
+.barra{
+    color: black;
+}

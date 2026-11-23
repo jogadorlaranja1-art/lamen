@@ -1,0 +1,52 @@
+{
+    "usuario": {
+      "idUsuario": 1,
+      "nome": "Rafael Oliveira",
+      "email": "rafael@email.com"
+    },
+    "enderecoEntrega": {
+      "cep": "30140-071",
+      "rua": "Rua Santa Rita Durão",
+      "numero": "1300",
+      "bairro": "Savassi",
+      "cidade": "Belo Horizonte"
+    },
+    "pedido": {
+      "idPedido": 101,
+      "idUsuario": 1,
+      "status": "Em preparo",
+      "itens": [
+        {
+          "id": 1,
+          "produto": "Lámen Tradicional",
+          "quantidade": 1,
+          "preco": 29.90
+        },
+        {
+          "id": 2,
+          "produto": "Lámen Picante",
+          "quantidade": 1,
+          "preco": 32.90
+        },
+        {
+          "id": 3,
+          "produto": "Lámen Extra Gigante",
+          "quantidade": 1,
+          "preco": 49.90
+        },
+        {
+          "id": 4,
+          "produto": "Bebidas Refrescantes",
+          "quantidade": 2,
+          "preco": 6.90
+        },
+        {
+          "id": 5,
+          "produto": "Acompanhamentos Irresistíveis",
+          "quantidade": 1,
+          "preco": 7.90
+        }
+      ],
+      "valorTotal": 134.40
+    }
+  }

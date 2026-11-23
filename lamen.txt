@@ -1,0 +1,7 @@
+produto
+
+cep
+rua/av
+numero
+bairro
+cidade
